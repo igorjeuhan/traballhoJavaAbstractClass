@@ -4,8 +4,6 @@ public class ProfessorHorista extends Professor {
     
     public ProfessorHorista (String n, double s, double h) {
         super(n, s);
-        this.setNomeP(n);
-        this.setSalario(s);
         this.setHoras(h);
     }
     
@@ -19,6 +17,7 @@ public class ProfessorHorista extends Professor {
         return this.horasTrab;
     }
     
+    @Override
     public double calcularSalarioLiquido() {
         return ((this.getSalario() * this.horasTrab) - (this.getSalario() * 5 / 100));
     }

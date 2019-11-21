@@ -45,4 +45,9 @@ public abstract class Produto {
     public double getPreco() {
         return this.preco;
     }
+    
+    public abstract double calcularPrecoFinal();
+    
+    public abstract String imprimirDados();
+    
 }
